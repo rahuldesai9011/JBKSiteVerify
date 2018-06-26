@@ -13,7 +13,7 @@ import com.relevantcodes.extentreports.model.Test;
 import com.relevantcodes.extentreports.model.TestAttribute;
 import com.relevantcodes.extentreports.source.ImageHtml;
 import com.relevantcodes.extentreports.source.ScreencastHtml;
-
+   
 
 public class ExtentTest {
     private LogStatus runStatus = LogStatus.UNKNOWN;
