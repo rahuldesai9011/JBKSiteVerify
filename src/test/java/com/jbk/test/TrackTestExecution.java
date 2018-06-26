@@ -31,7 +31,7 @@ public class TrackTestExecution implements ITestListener {
 				String path = TakeScreenShot
 						.captureScreenshot(result.getName() + " Failed Link " + JbkSiteLinkVerify.linkName);
 				String image = JbkSiteLinkVerify.logger.addScreenCapture(path);
-				JbkSiteLinkVerify.logger.log(LogStatus.INFO, "Total Links Required: " + JbkSiteLinkVerify.rows);
+				JbkSiteLinkVerify.logger.log(LogStatus.INFO, "Total Links Required are: " + JbkSiteLinkVerify.rows);
 				JbkSiteLinkVerify.logger.log(LogStatus.ERROR, "Sequence Mathed? : " + JbkSiteLinkVerify.sequence);
 				JbkSiteLinkVerify.logger.log(LogStatus.ERROR,
 						"Total Links Found: " + JbkSiteLinkVerify.page_links.size());
