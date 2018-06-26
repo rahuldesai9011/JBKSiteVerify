@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.jbk.test.JbkSiteLinkVerify">
+        <methods>
+          <include name="setupEnvironment"/>
+          <include name="tearDown"/>
+          <include name="verifyJBKSite" invocation-numbers="1 15 16"/>
+        </methods>
+      </class> <!-- com.jbk.test.JbkSiteLinkVerify -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

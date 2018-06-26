@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-JBKSiteLinkTestSuite" class="navigator-link">
+              <span class="suite-name border-failed">JBKSiteLinkTestSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-JBKSiteLinkTestSuite" class="navigator-link ">
+                    <span>E:\JBK\JBKPROGRAMS\JbkSiteTask\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-JBKSiteLinkTestSuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-JBKSiteLinkTestSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-JBKSiteLinkTestSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-JBKSiteLinkTestSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-JBKSiteLinkTestSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-JBKSiteLinkTestSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">17 methods, 3 failed,   14 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-JBKSiteLinkTestSuite" class="hide-methods failed suite-JBKSiteLinkTestSuite"> (hide)</a> <!-- hide-methods failed suite-JBKSiteLinkTestSuite -->
+                      <a href="#" panel-name="suite-JBKSiteLinkTestSuite" class="show-methods failed suite-JBKSiteLinkTestSuite"> (show)</a> <!-- show-methods failed suite-JBKSiteLinkTestSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-JBKSiteLinkTestSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-JBKSiteLinkTestSuite" title="com.jbk.test.JbkSiteLinkVerify" class="method navigator-link" hash-for-method="verifyJBKSite(Freshers Zone)">verifyJBKSite(Freshers Zone)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-JBKSiteLinkTestSuite" title="com.jbk.test.JbkSiteLinkVerify" class="method navigator-link" hash-for-method="verifyJBKSite(About Sir)">verifyJBKSite(About Sir)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-JBKSiteLinkTestSuite" title="com.jbk.test.JbkSiteLinkVerify" class="method navigator-link" hash-for-method="verifyJBKSite(Recruiters)">verifyJBKSite(Recruiters)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-JBKSiteLinkTestSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-JBKSiteLinkTestSuite" class="hide-methods passed suite-JBKSiteLinkTestSuite"> (hide)</a> <!-- hide-methods passed suite-JBKSiteLinkTestSuite -->
+                      <a href="#" panel-name="suite-JBKSiteLinkTestSuite" class="show-methods passed suite-JBKSiteLinkTestSuite"> (show)</a> <!-- show-methods passed suite-JBKSiteLinkTestSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-JBKSiteLinkTestSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-JBKSiteLinkTestSuite" title="com.jbk.test.JbkSiteLinkVerify" class="method navigator-link" hash-for-method="verifyJBKSite(Old Student Feedback)">verifyJBKSite(Old Student Feedback)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-JBKSiteLinkTestSuite" title="com.jbk.test.JbkSiteLinkVerify" class="method navigator-link" hash-for-method="verifyJBKSite(Videos)">verifyJBKSite(Videos)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-JBKSiteLinkTestSuite" title="com.jbk.test.JbkSiteLinkVerify" class="method navigator-link" hash-for-method="verifyJBKSite(Gallery)">verifyJBKSite(Gallery)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-JBKSiteLinkTestSuite" title="com.jbk.test.JbkSiteLinkVerify" class="method navigator-link" hash-for-method="verifyJBKSite(Contact)">verifyJBKSite(Contact)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-JBKSiteLinkTestSuite" title="com.jbk.test.JbkSiteLinkVerify" class="method navigator-link" hash-for-method="verifyJBKSite(My Books)">verifyJBKSite(My Books)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-JBKSiteLinkTestSuite" title="com.jbk.test.JbkSiteLinkVerify" class="method navigator-link" hash-for-method="verifyJBKSite(Home)">verifyJBKSite(Home)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-JBKSiteLinkTestSuite" title="com.jbk.test.JbkSiteLinkVerify" class="method navigator-link" hash-for-method="verifyJBKSite(Tutorials)">verifyJBKSite(Tutorials)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-JBKSiteLinkTestSuite" title="com.jbk.test.JbkSiteLinkVerify" class="method navigator-link" hash-for-method="verifyJBKSite(Python Syllabus)">verifyJBKSite(Python Syllabus)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-JBKSiteLinkTestSuite" title="com.jbk.test.JbkSiteLinkVerify" class="method navigator-link" hash-for-method="verifyJBKSite(Services)">verifyJBKSite(Services)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-JBKSiteLinkTestSuite" title="com.jbk.test.JbkSiteLinkVerify" class="method navigator-link" hash-for-method="verifyJBKSite(Selenium Syllabus)">verifyJBKSite(Selenium Syllabus)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-JBKSiteLinkTestSuite" title="com.jbk.test.JbkSiteLinkVerify" class="method navigator-link" hash-for-method="verifyJBKSite(Java Syllabus)">verifyJBKSite(Java Syllabus)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-JBKSiteLinkTestSuite" title="com.jbk.test.JbkSiteLinkVerify" class="method navigator-link" hash-for-method="verifyJBKSite(Corporate Training)">verifyJBKSite(Corporate Training)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-JBKSiteLinkTestSuite" title="com.jbk.test.JbkSiteLinkVerify" class="method navigator-link" hash-for-method="verifyJBKSite(Class Room Examples)">verifyJBKSite(Class Room Examples)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-JBKSiteLinkTestSuite" title="com.jbk.test.JbkSiteLinkVerify" class="method navigator-link" hash-for-method="verifyJBKSite(Interview Questions)">verifyJBKSite(Interview Questions)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-JBKSiteLinkTestSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-JBKSiteLinkTestSuite" class="panel JBKSiteLinkTestSuite">
+          <div class="suite-JBKSiteLinkTestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.jbk.test.JbkSiteLinkVerify</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyJBKSite(Freshers Zone)">
+                  </a> <!-- verifyJBKSite(Freshers Zone) -->
+                  <span class="method-name">verifyJBKSite</span>
+                  <span class="parameters">(Freshers Zone)</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: expected [true] but found [false]
+	at com.jbk.test.JbkSiteLinkVerify.verifyJBKSite(JbkSiteLinkVerify.java:106)
+... Removed 27 stack frames<br/> java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.jbk.test.JbkSiteLinkVerify.verifyJBKSite(JbkSiteLinkVerify.java:106)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertTrue(Assert.java:42)<br>org.testng.Assert.assertTrue(Assert.java:52)<br>com.jbk.test.JbkSiteLinkVerify.verifyJBKSite(JbkSiteLinkVerify.java:106)<br>jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.base/java.lang.reflect.Method.invoke(Unknown Source)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyJBKSite(About Sir)">
+                  </a> <!-- verifyJBKSite(About Sir) -->
+                  <span class="method-name">verifyJBKSite</span>
+                  <span class="parameters">(About Sir)</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: expected [true] but found [false]
+	at com.jbk.test.JbkSiteLinkVerify.verifyJBKSite(JbkSiteLinkVerify.java:106)
+... Removed 28 stack frames<br/> java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.jbk.test.JbkSiteLinkVerify.verifyJBKSite(JbkSiteLinkVerify.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertTrue(Assert.java:42)<br>org.testng.Assert.assertTrue(Assert.java:52)<br>com.jbk.test.JbkSiteLinkVerify.verifyJBKSite(JbkSiteLinkVerify.java:106)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.base/java.lang.reflect.Method.invoke(Unknown Source)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyJBKSite(Recruiters)">
+                  </a> <!-- verifyJBKSite(Recruiters) -->
+                  <span class="method-name">verifyJBKSite</span>
+                  <span class="parameters">(Recruiters)</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: expected [true] but found [false]
+	at com.jbk.test.JbkSiteLinkVerify.verifyJBKSite(JbkSiteLinkVerify.java:106)
+... Removed 28 stack frames<br/> java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.jbk.test.JbkSiteLinkVerify.verifyJBKSite(JbkSiteLinkVerify.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertTrue(Assert.java:42)<br>org.testng.Assert.assertTrue(Assert.java:52)<br>com.jbk.test.JbkSiteLinkVerify.verifyJBKSite(JbkSiteLinkVerify.java:106)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.base/java.lang.reflect.Method.invoke(Unknown Source)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-JBKSiteLinkTestSuite-class-failed -->
+          <div class="suite-JBKSiteLinkTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.jbk.test.JbkSiteLinkVerify</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyJBKSite(Old Student Feedback)">
+                  </a> <!-- verifyJBKSite(Old Student Feedback) -->
+                  <span class="method-name">verifyJBKSite</span>
+                  <span class="parameters">(Old Student Feedback)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyJBKSite(Videos)">
+                  </a> <!-- verifyJBKSite(Videos) -->
+                  <span class="method-name">verifyJBKSite</span>
+                  <span class="parameters">(Videos)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyJBKSite(Gallery)">
+                  </a> <!-- verifyJBKSite(Gallery) -->
+                  <span class="method-name">verifyJBKSite</span>
+                  <span class="parameters">(Gallery)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyJBKSite(Contact)">
+                  </a> <!-- verifyJBKSite(Contact) -->
+                  <span class="method-name">verifyJBKSite</span>
+                  <span class="parameters">(Contact)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyJBKSite(My Books)">
+                  </a> <!-- verifyJBKSite(My Books) -->
+                  <span class="method-name">verifyJBKSite</span>
+                  <span class="parameters">(My Books)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyJBKSite(Home)">
+                  </a> <!-- verifyJBKSite(Home) -->
+                  <span class="method-name">verifyJBKSite</span>
+                  <span class="parameters">(Home)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyJBKSite(Tutorials)">
+                  </a> <!-- verifyJBKSite(Tutorials) -->
+                  <span class="method-name">verifyJBKSite</span>
+                  <span class="parameters">(Tutorials)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyJBKSite(Python Syllabus)">
+                  </a> <!-- verifyJBKSite(Python Syllabus) -->
+                  <span class="method-name">verifyJBKSite</span>
+                  <span class="parameters">(Python Syllabus)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyJBKSite(Services)">
+                  </a> <!-- verifyJBKSite(Services) -->
+                  <span class="method-name">verifyJBKSite</span>
+                  <span class="parameters">(Services)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyJBKSite(Selenium Syllabus)">
+                  </a> <!-- verifyJBKSite(Selenium Syllabus) -->
+                  <span class="method-name">verifyJBKSite</span>
+                  <span class="parameters">(Selenium Syllabus)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyJBKSite(Java Syllabus)">
+                  </a> <!-- verifyJBKSite(Java Syllabus) -->
+                  <span class="method-name">verifyJBKSite</span>
+                  <span class="parameters">(Java Syllabus)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyJBKSite(Corporate Training)">
+                  </a> <!-- verifyJBKSite(Corporate Training) -->
+                  <span class="method-name">verifyJBKSite</span>
+                  <span class="parameters">(Corporate Training)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyJBKSite(Class Room Examples)">
+                  </a> <!-- verifyJBKSite(Class Room Examples) -->
+                  <span class="method-name">verifyJBKSite</span>
+                  <span class="parameters">(Class Room Examples)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyJBKSite(Interview Questions)">
+                  </a> <!-- verifyJBKSite(Interview Questions) -->
+                  <span class="method-name">verifyJBKSite</span>
+                  <span class="parameters">(Interview Questions)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-JBKSiteLinkTestSuite-class-passed -->
+        </div> <!-- panel JBKSiteLinkTestSuite -->
+        <div panel-name="test-xml-JBKSiteLinkTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\JBK\JBKPROGRAMS\JbkSiteTask\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;JBKSiteLinkTestSuite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.jbk.test.TrackTestExecution&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.jbk.test.JbkSiteLinkVerify&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- test --&gt;
+&lt;/suite&gt; &lt;!-- JBKSiteLinkTestSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-JBKSiteLinkTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for JBKSiteLinkTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-JBKSiteLinkTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for JBKSiteLinkTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-JBKSiteLinkTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for JBKSiteLinkTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_JBKSiteLinkTestSuite');
+function tableData_JBKSiteLinkTestSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(17);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyJBKSite')
+data.setCell(0, 2, 'com.jbk.test.JbkSiteLinkVerify')
+data.setCell(0, 3, 3408);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyJBKSite')
+data.setCell(1, 2, 'com.jbk.test.JbkSiteLinkVerify')
+data.setCell(1, 3, 2585);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyJBKSite')
+data.setCell(2, 2, 'com.jbk.test.JbkSiteLinkVerify')
+data.setCell(2, 3, 2548);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyJBKSite')
+data.setCell(3, 2, 'com.jbk.test.JbkSiteLinkVerify')
+data.setCell(3, 3, 1994);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyJBKSite')
+data.setCell(4, 2, 'com.jbk.test.JbkSiteLinkVerify')
+data.setCell(4, 3, 1548);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyJBKSite')
+data.setCell(5, 2, 'com.jbk.test.JbkSiteLinkVerify')
+data.setCell(5, 3, 1539);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyJBKSite')
+data.setCell(6, 2, 'com.jbk.test.JbkSiteLinkVerify')
+data.setCell(6, 3, 1538);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyJBKSite')
+data.setCell(7, 2, 'com.jbk.test.JbkSiteLinkVerify')
+data.setCell(7, 3, 1193);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyJBKSite')
+data.setCell(8, 2, 'com.jbk.test.JbkSiteLinkVerify')
+data.setCell(8, 3, 1130);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyJBKSite')
+data.setCell(9, 2, 'com.jbk.test.JbkSiteLinkVerify')
+data.setCell(9, 3, 1120);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyJBKSite')
+data.setCell(10, 2, 'com.jbk.test.JbkSiteLinkVerify')
+data.setCell(10, 3, 1110);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyJBKSite')
+data.setCell(11, 2, 'com.jbk.test.JbkSiteLinkVerify')
+data.setCell(11, 3, 1091);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyJBKSite')
+data.setCell(12, 2, 'com.jbk.test.JbkSiteLinkVerify')
+data.setCell(12, 3, 1069);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyJBKSite')
+data.setCell(13, 2, 'com.jbk.test.JbkSiteLinkVerify')
+data.setCell(13, 3, 1047);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyJBKSite')
+data.setCell(14, 2, 'com.jbk.test.JbkSiteLinkVerify')
+data.setCell(14, 3, 1028);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyJBKSite')
+data.setCell(15, 2, 'com.jbk.test.JbkSiteLinkVerify')
+data.setCell(15, 3, 685);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifyJBKSite')
+data.setCell(16, 2, 'com.jbk.test.JbkSiteLinkVerify')
+data.setCell(16, 3, 443);
+window.suiteTableData['JBKSiteLinkTestSuite']= { tableData: data, tableDiv: 'times-div-JBKSiteLinkTestSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 25 seconds</span>
+              <div id="times-div-JBKSiteLinkTestSuite">
+              </div> <!-- times-div-JBKSiteLinkTestSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-JBKSiteLinkTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for JBKSiteLinkTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-JBKSiteLinkTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-JBKSiteLinkTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.jbk.test.JbkSiteLinkVerify</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupEnvironment</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">verifyJBKSite(Home)</span>
+                <span class="method-start">62755 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyJBKSite(About Sir)</span>
+                <span class="method-start">67471 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyJBKSite(Java Syllabus)</span>
+                <span class="method-start">69892 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyJBKSite(Selenium Syllabus)</span>
+                <span class="method-start">72643 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyJBKSite(Python Syllabus)</span>
+                <span class="method-start">74580 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyJBKSite(Videos)</span>
+                <span class="method-start">77544 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyJBKSite(Services)</span>
+                <span class="method-start">81416 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyJBKSite(Gallery)</span>
+                <span class="method-start">83019 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyJBKSite(My Books)</span>
+                <span class="method-start">84516 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyJBKSite(Old Student Feedback)</span>
+                <span class="method-start">86003 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyJBKSite(Class Room Examples)</span>
+                <span class="method-start">87560 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyJBKSite(Contact)</span>
+                <span class="method-start">89057 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyJBKSite(Interview Questions)</span>
+                <span class="method-start">92047 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyJBKSite(Tutorials)</span>
+                <span class="method-start">93493 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyJBKSite(Corporate Training)</span>
+                <span class="method-start">95408 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyJBKSite(Recruiters)</span>
+                <span class="method-start">96787 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyJBKSite(Freshers Zone)</span>
+                <span class="method-start">97849 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">99100 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

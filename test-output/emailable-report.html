@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">test</td><td class="numi">17</td><td class="numi">14</td><td class="numi">0</td><td class="numi_attn">17</td><td class="numi">36.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="17">com.jbk.test.JbkSiteLinkVerify</td><td><a href="#m1"><b>verifyJBKSite</b>  </a></td><td class="numi">3</td><td>1529940812389</td><td class="numi">30821</td></tr><tr class="failedodd"><td><a href="#m2"><b>verifyJBKSite</b>  </a></td><td class="numi">3</td><td>1529940812389</td><td class="numi">30821</td></tr><tr class="failedodd"><td><a href="#m3"><b>verifyJBKSite</b>  </a></td><td class="numi">3</td><td>1529940812389</td><td class="numi">30821</td></tr><tr class="failedodd"><td><a href="#m4"><b>verifyJBKSite</b>  </a></td><td class="numi">3</td><td>1529940812389</td><td class="numi">30821</td></tr><tr class="failedodd"><td><a href="#m5"><b>verifyJBKSite</b>  </a></td><td class="numi">3</td><td>1529940812389</td><td class="numi">30821</td></tr><tr class="failedodd"><td><a href="#m6"><b>verifyJBKSite</b>  </a></td><td class="numi">3</td><td>1529940812389</td><td class="numi">30821</td></tr><tr class="failedodd"><td><a href="#m7"><b>verifyJBKSite</b>  </a></td><td class="numi">3</td><td>1529940812389</td><td class="numi">30821</td></tr><tr class="failedodd"><td><a href="#m8"><b>verifyJBKSite</b>  </a></td><td class="numi">3</td><td>1529940812389</td><td class="numi">30821</td></tr><tr class="failedodd"><td><a href="#m9"><b>verifyJBKSite</b>  </a></td><td class="numi">3</td><td>1529940812389</td><td class="numi">30821</td></tr><tr class="failedodd"><td><a href="#m10"><b>verifyJBKSite</b>  </a></td><td class="numi">3</td><td>1529940812389</td><td class="numi">30821</td></tr><tr class="failedodd"><td><a href="#m11"><b>verifyJBKSite</b>  </a></td><td class="numi">3</td><td>1529940812389</td><td class="numi">30821</td></tr><tr class="failedodd"><td><a href="#m12"><b>verifyJBKSite</b>  </a></td><td class="numi">3</td><td>1529940812389</td><td class="numi">30821</td></tr><tr class="failedodd"><td><a href="#m13"><b>verifyJBKSite</b>  </a></td><td class="numi">3</td><td>1529940812389</td><td class="numi">30821</td></tr><tr class="failedodd"><td><a href="#m14"><b>verifyJBKSite</b>  </a></td><td class="numi">3</td><td>1529940812389</td><td class="numi">30821</td></tr><tr class="failedodd"><td><a href="#m15"><b>verifyJBKSite</b>  </a></td><td class="numi">3</td><td>1529940812389</td><td class="numi">30821</td></tr><tr class="failedodd"><td><a href="#m16"><b>verifyJBKSite</b>  </a></td><td class="numi">3</td><td>1529940812389</td><td class="numi">30821</td></tr><tr class="failedodd"><td><a href="#m17"><b>verifyJBKSite</b>  </a></td><td class="numi">3</td><td>1529940812389</td><td class="numi">30821</td></tr>
+<tr><th colspan="4">test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="17">com.jbk.test.JbkSiteLinkVerify</td><td><a href="#m18"><b>verifyJBKSite</b>  </a></td><td class="numi">14</td><td>1529940807673</td><td class="numi">33681</td></tr><tr class="passedodd"><td><a href="#m19"><b>verifyJBKSite</b>  </a></td><td class="numi">14</td><td>1529940807673</td><td class="numi">33681</td></tr><tr class="passedodd"><td><a href="#m20"><b>verifyJBKSite</b>  </a></td><td class="numi">14</td><td>1529940807673</td><td class="numi">33681</td></tr><tr class="passedodd"><td><a href="#m21"><b>verifyJBKSite</b>  </a></td><td class="numi">14</td><td>1529940807673</td><td class="numi">33681</td></tr><tr class="passedodd"><td><a href="#m22"><b>verifyJBKSite</b>  </a></td><td class="numi">14</td><td>1529940807673</td><td class="numi">33681</td></tr><tr class="passedodd"><td><a href="#m23"><b>verifyJBKSite</b>  </a></td><td class="numi">14</td><td>1529940807673</td><td class="numi">33681</td></tr><tr class="passedodd"><td><a href="#m24"><b>verifyJBKSite</b>  </a></td><td class="numi">14</td><td>1529940807673</td><td class="numi">33681</td></tr><tr class="passedodd"><td><a href="#m25"><b>verifyJBKSite</b>  </a></td><td class="numi">14</td><td>1529940807673</td><td class="numi">33681</td></tr><tr class="passedodd"><td><a href="#m26"><b>verifyJBKSite</b>  </a></td><td class="numi">14</td><td>1529940807673</td><td class="numi">33681</td></tr><tr class="passedodd"><td><a href="#m27"><b>verifyJBKSite</b>  </a></td><td class="numi">14</td><td>1529940807673</td><td class="numi">33681</td></tr><tr class="passedodd"><td><a href="#m28"><b>verifyJBKSite</b>  </a></td><td class="numi">14</td><td>1529940807673</td><td class="numi">33681</td></tr><tr class="passedodd"><td><a href="#m29"><b>verifyJBKSite</b>  </a></td><td class="numi">14</td><td>1529940807673</td><td class="numi">33681</td></tr><tr class="passedodd"><td><a href="#m30"><b>verifyJBKSite</b>  </a></td><td class="numi">14</td><td>1529940807673</td><td class="numi">33681</td></tr><tr class="passedodd"><td><a href="#m31"><b>verifyJBKSite</b>  </a></td><td class="numi">14</td><td>1529940807673</td><td class="numi">33681</td></tr><tr class="passedodd"><td><a href="#m32"><b>verifyJBKSite</b>  </a></td><td class="numi">14</td><td>1529940807673</td><td class="numi">33681</td></tr><tr class="passedodd"><td><a href="#m33"><b>verifyJBKSite</b>  </a></td><td class="numi">14</td><td>1529940807673</td><td class="numi">33681</td></tr><tr class="passedodd"><td><a href="#m34"><b>verifyJBKSite</b>  </a></td><td class="numi">14</td><td>1529940807673</td><td class="numi">33681</td></tr>
+</table>
+<h1>test</h1>
+<h2 id="m1">com.jbk.test.JbkSiteLinkVerify:verifyJBKSite</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Freshers Zone</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at com.jbk.test.JbkSiteLinkVerify.verifyJBKSite(JbkSiteLinkVerify.java:106)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.jbk.test.JbkSiteLinkVerify:verifyJBKSite</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>About Sir</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at com.jbk.test.JbkSiteLinkVerify.verifyJBKSite(JbkSiteLinkVerify.java:106)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.jbk.test.JbkSiteLinkVerify:verifyJBKSite</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Recruiters</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at com.jbk.test.JbkSiteLinkVerify.verifyJBKSite(JbkSiteLinkVerify.java:106)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.jbk.test.JbkSiteLinkVerify:verifyJBKSite</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Old Student Feedback</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.jbk.test.JbkSiteLinkVerify:verifyJBKSite</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Videos</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.jbk.test.JbkSiteLinkVerify:verifyJBKSite</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Gallery</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.jbk.test.JbkSiteLinkVerify:verifyJBKSite</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Contact</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">com.jbk.test.JbkSiteLinkVerify:verifyJBKSite</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>My Books</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">com.jbk.test.JbkSiteLinkVerify:verifyJBKSite</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Home</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">com.jbk.test.JbkSiteLinkVerify:verifyJBKSite</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Tutorials</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">com.jbk.test.JbkSiteLinkVerify:verifyJBKSite</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Python Syllabus</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">com.jbk.test.JbkSiteLinkVerify:verifyJBKSite</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Services</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">com.jbk.test.JbkSiteLinkVerify:verifyJBKSite</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Selenium Syllabus</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">com.jbk.test.JbkSiteLinkVerify:verifyJBKSite</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Java Syllabus</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">com.jbk.test.JbkSiteLinkVerify:verifyJBKSite</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Corporate Training</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">com.jbk.test.JbkSiteLinkVerify:verifyJBKSite</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Class Room Examples</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">com.jbk.test.JbkSiteLinkVerify:verifyJBKSite</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Interview Questions</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
