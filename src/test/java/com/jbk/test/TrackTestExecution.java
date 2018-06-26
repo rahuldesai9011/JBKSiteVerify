@@ -45,7 +45,7 @@ public class TrackTestExecution implements ITestListener {
 			}
 		} else {
 
-			try {
+			try {   
 				String path = TakeScreenShot
 						.captureScreenshot(result.getName() + " Failed Link " + JbkSiteLinkVerify.linkName);
 				String image = JbkSiteLinkVerify.logger.addScreenCapture(path);
