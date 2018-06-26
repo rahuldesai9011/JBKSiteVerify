@@ -41,7 +41,7 @@ public class TrackTestExecution implements ITestListener {
 				e.printStackTrace();
 			} finally {
 				JbkSiteLinkVerify.reports.endTest(JbkSiteLinkVerify.logger);
-				JbkSiteLinkVerify.reports.flush();
+				JbkSiteLinkVerify.repo  rts.flush();
 			}
 		} else {
 
