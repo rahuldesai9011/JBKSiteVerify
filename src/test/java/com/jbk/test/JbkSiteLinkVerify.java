@@ -50,8 +50,8 @@ public class JbkSiteLinkVerify {
 
 		reports = new ExtentReports(properties.getProperty("reportpath"), true);
 		
-		//System.setProperty(properties.getProperty("chromekey"), properties.getProperty("chromevalue"));
-		driver = new HtmlUnitDriver();
+		System.setProperty(properties.getProperty("chromekey"), properties.getProperty("chromevalue"));
+		driver = new ChromeDriver();
 		log4j.info("Chrome browser opened");
 
 		driver.get(properties.getProperty("applicationpath"));
