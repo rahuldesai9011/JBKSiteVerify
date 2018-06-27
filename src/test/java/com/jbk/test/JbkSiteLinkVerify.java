@@ -13,6 +13,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement; 
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -50,7 +51,7 @@ public class JbkSiteLinkVerify {
 		reports = new ExtentReports(properties.getProperty("reportpath"), true);
 		
 		//System.setProperty(properties.getProperty("chromekey"), properties.getProperty("chromevalue"));
-		driver = new FirefoxDriver();
+		driver = new HtmlUnitDriver();
 		log4j.info("Chrome browser opened");
 
 		driver.get(properties.getProperty("applicationpath"));
