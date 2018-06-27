@@ -12,8 +12,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement; 
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -141,7 +139,7 @@ public class JbkSiteLinkVerify {
 
 	@AfterSuite
 	public void tearDown() {
-		driver.get(properties.getProperty("reportpath"));
+		driver.quit();
 	}
 
 }
