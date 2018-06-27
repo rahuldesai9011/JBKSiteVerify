@@ -40,7 +40,7 @@ public class JbkSiteLinkVerify {
 	
 	@BeforeSuite
 	public void setupEnvironment() throws Exception {
-		FileInputStream finput = new FileInputStream("D:\\JBK Link Data\\input.properties");
+		FileInputStream finput = new FileInputStream("input.properties");
 		properties.load(finput);
 
 		log4j = Logger.getLogger("JbkSiteLinkVerify");
@@ -48,8 +48,8 @@ public class JbkSiteLinkVerify {
 
 		reports = new ExtentReports(properties.getProperty("reportpath"), true);
 		
-		System.setProperty(properties.getProperty("chromekey"), properties.getProperty("chromevalue"));
-		driver = new ChromeDriver();
+		//System.setProperty(properties.getProperty("chromekey"), properties.getProperty("chromevalue"));
+		driver = new FirefoxDriver();
 		log4j.info("Chrome browser opened");
 
 		driver.get(properties.getProperty("applicationpath"));
